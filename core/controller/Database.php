@@ -2,12 +2,12 @@
 class Database {
 	public static $db;
 	public static $con;
+	
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="bookmedik";
 	}
 
 	function connect(){
-		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
+		$con = new mysqli("localhost", "user", "pass", "db");
 		$con->query("set sql_mode=''");
 		return $con;
 	}

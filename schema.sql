@@ -2,6 +2,7 @@
 * BookMedik Database
 * @author Evilnapsis
 */
+DROP DATABASE IF EXISTS bookmedik;
 create database bookmedik;
 use bookmedik; 
 set sql_mode='';
