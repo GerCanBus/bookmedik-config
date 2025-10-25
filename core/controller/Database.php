@@ -7,17 +7,12 @@ class Database {
 	}
 
 	function connect(){
-<<<<<<< HEAD
-	// ********************************************************
-        // *** ESTA ES LA OPCION HARCODEADAS  ************
-        // ********************************************************
-=======
-// PASO 1
+// PRACTICA 1  (sencilla)
+
 	// ********************************************************
         // ******** MODIFICO "USER" , "PASS" , DB   ***************
         // ********************************************************
 
->>>>>>> fd3a62c3f37697a66b7fad6c39f8f2f640c6f0b5
 		$con = new mysqli("localhost", "gerard", "123456", "bookmedik");
 		$con->query("set sql_mode=''");
 		return $con;
